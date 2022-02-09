@@ -1,0 +1,12 @@
+body{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+.data-publicacao{
+    margin-left: 6px;
+    padding-left: 6px;
+    border-left: solid 2px rgb(110, 91, 91);
+}
+.cont-autor{
+    margin-bottom: 12px;
+}

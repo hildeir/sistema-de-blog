@@ -1,0 +1,140 @@
+body{
+    background-color: #f2f2f2;
+}
+/******** ferramenta editor ********/
+.toolbar{
+    background-color: #80ffff;
+    width: 340px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#textarea{
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    overflow: auto;
+    position: relative;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.conteiner-editor{
+    display: flex;
+    justify-content: center;
+}
+.ferramentaToolbar{
+    padding: 5px;
+}
+.selectFerramenta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.popdown img{
+    padding: 10px;
+}
+.popdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 0px;
+    height: auto;
+    width: 110px;
+    box-shadow: 0px 0px 3px 2px #808080;
+    z-index: 999;
+    position: relative;
+}
+.selecaoFoto{
+    background-color: rgba(102, 194, 255, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.resizeCont{
+    width: 500px;
+    height: 500px;
+    border: solid 2px green;
+    position: absolute;
+    display: none;
+    top: 0;
+}
+.pontos{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border: solid 2px #fff;
+    position: absolute;
+    
+}
+.top{
+    top: -8px;
+    left: 50%;
+    cursor: n-resize;
+}
+.bottom{
+    bottom: -8px;
+    left: 50%;
+    cursor: s-resize;
+}
+.left{
+    left: -8px;
+    top: 50%;
+    cursor: w-resize;
+}
+.right{
+    right: -8px;
+    top: 50%;
+    cursor: w-resize;
+}
+#titulo_pagina{
+    width: 70%;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+/* //////// nao relacionado a ferramenta editor //////////// */
+.conteiner-bts-artigo-publicar-visualizar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conteiner-bts{
+    text-align: end;
+    margin: 10px;
+}
+.cont-deslogar{
+    text-align: right;
+    margin-right: 40px;
+}
+.conteiner-bts input{
+    background-color: #6b2f6b;
+    border-style: none;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+@media (max-width: 425px){
+    #titulo_pagina{
+        width: auto;
+    }
+    #textarea{
+        width: auto;
+    }
+    .cont-deslogar{
+        margin-right: 0px;
+    }
+    .conteiner-bts{
+        margin-right: 0px;
+    }
+    .conteiner-editor{
+        justify-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+}

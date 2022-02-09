@@ -1,0 +1,24 @@
+.cont-form{
+    background-color: rgb(158, 155, 140);
+    padding: 20px;
+    border-radius: 5px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 5px;
+    padding: 8px;
+}
+.text-cadastra-usuario{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
