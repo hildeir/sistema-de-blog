@@ -23,7 +23,7 @@ export function atualizaPaginacao(pagina,tipoPost,dados){
                 clonePg.innerText = i+1;
                 clonePg.addEventListener("click",function(){
 
-                    atualizaPaginacao(this,"publicado",dados);
+                    atualizaPaginacao(this,tipoPost,dados);
                     montaBlog(exibicao,i,this);              
                     localStorage.setItem("pg",i+1);
                     active();
@@ -77,7 +77,7 @@ export function atualizaPaginacao(pagina,tipoPost,dados){
                 clonePg.innerText = i+1;
                 clonePg.addEventListener("click",function(){
                     
-                    atualizaPaginacao(this,"publicado",dados);
+                    atualizaPaginacao(this,tipoPost,dados);
                     montaBlog(exibicao,i,this);              
                     localStorage.setItem("pg",i+1);
                     active();
@@ -107,7 +107,7 @@ export function atualizaPaginacao(pagina,tipoPost,dados){
                 clonePg.innerText = i+1;
                 clonePg.addEventListener("click",function(){
     
-                    atualizaPaginacao(this,"publicado",dados);
+                    atualizaPaginacao(this,tipoPost,dados);
                     montaBlog(exibicao,i+1,this);              
                     localStorage.setItem("pg",i+1);
                     active();
